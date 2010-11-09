@@ -1,4 +1,0 @@
-<Modules>
-  <Module PersistentId="C7620A41-6766-417D-A7C4-3CD835C88C7C" ModuleId="NHibernatePerformanceIssues" />
-  <Module PersistentId="Spring.Core, Version=0.0.0.20608, Culture=neutral, PublicKeyToken=65e474d141e25e07" ModuleId="Spring.Core" />
-</Modules>

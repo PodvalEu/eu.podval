@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -31,11 +31,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\lib\commong.logging\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\..\lib\nhibernate\fluent\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\lib\nhibernate\NHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="Spring.Core">
       <HintPath>..\..\lib\spring.net\Spring.Core.dll</HintPath>
     </Reference>
     <Reference Include="Spring.Data">
       <HintPath>..\..\lib\spring.net\Spring.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data.NHibernate21">
+      <HintPath>..\..\lib\spring.net\Spring.Data.NHibernate21.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,13 +58,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mapping\BookMapping.cs" />
+    <Compile Include="Mapping\LibraryMapping.cs" />
+    <Compile Include="Mapping\RentalMapping.cs" />
     <Compile Include="Model\Book.cs" />
     <Compile Include="Model\Library.cs" />
     <Compile Include="Model\Rental.cs" />
+    <Compile Include="Repository\ILibraryRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="NHibernateRepositoryImpl\LibraryRepository.cs" />
+    <Compile Include="SessionFactory\FluentNHibernateSessionFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\context.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

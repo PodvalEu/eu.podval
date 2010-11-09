@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:tx="http://www.springframework.net/tx"
+         xmlns:db="http://www.springframework.net/database"
+	       xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/xsd/spring-objects.xsd" >
+
+  <object id="LibraryRepository" type="eu.podval.NHibernatePerformanceIssues.NHibernateRepositoryImpl.LibraryRepository, NHibernatePerformanceIssues" autowire="byType" />
+
+  <db:provider id="DbProvider" provider="SqlServer-2.0" connectionString="Server=localhost\SQLEXPRESS;Integrated Security=true;Database=podval;" />
+
+  <object id="SessionFactory" type="eu.podval.NHibernatePerformanceIssues.SessionFactory.FluentNHibernateSessionFactory, NHibernatePerformanceIssues" depends-on="DbProvider">
+    <property name="DbProvider" ref="DbProvider"/>
+    <property name="ExposeTransactionAwareSessionFactory" value="true" />
+
+    <property name="FluentNhibernateMappingAssemblies">
+      <list>
+        <value>NHibernatePerformanceIssues</value>
+      </list>
+    </property>
+
+    <property name="HibernateProperties">
+      <dictionary>
+        <entry key="hibernate.connection.provider" value="NHibernate.Connection.DriverConnectionProvider"/>
+        <entry key="dialect" value="NHibernate.Dialect.MsSql2008Dialect"/>
+        <entry key="connection.driver_class" value="NHibernate.Driver.SqlClientDriver"/>
+        <entry key="hbm2ddl.auto" value="create" />
+        <entry key="hibernate.show_sql" value="true" />
+        <entry key="adonet.batch_size" value="100" />
+      </dictionary>
+    </property>
+  </object>
+
+  <object id="transactionManager" type="Spring.Data.NHibernate.HibernateTransactionmanager, Spring.Data.NHibernate21">
+    <property name="DBProvider" ref="DbProvider" />
+    <property name="SessionFactory" ref="SessionFactory" />
+  </object>
+
+  <tx:attribute-driven transaction-manager="transactionManager"/>
+
+</objects>
