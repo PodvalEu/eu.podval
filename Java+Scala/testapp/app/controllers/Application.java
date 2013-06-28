@@ -14,6 +14,7 @@ import play.libs.F;
 import play.mvc.Controller;
 import play.mvc.Http;
 import play.mvc.Result;
+import play.mvc.Results;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -97,6 +98,23 @@ public class Application extends Controller {
                     }
                 })
         );
+    }
+
+    public static Result indexLongStream() {
+        return ok(new File("c:\\Data\\Temp\\HPServiceVirtualizationDesigner.msi"));
+    }
+
+    public static Result indexChunkStrings() {
+        StringChunks stringChunks = new StringChunks() {
+            @Override
+            public void onReady(Out<String> stringOut) {
+                stringOut.write("first");
+                stringOut.write("second");
+                stringOut.write("third");
+                stringOut.close();
+            }
+        };
+        return ok(stringChunks);
     }
 
     public static Result postIndex() {
