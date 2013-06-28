@@ -2,19 +2,24 @@ package controllers;
 
 import models.Address;
 import org.codehaus.jackson.JsonNode;
-import org.codehaus.jackson.node.*;
+import org.codehaus.jackson.node.ArrayNode;
+import org.codehaus.jackson.node.IntNode;
+import org.codehaus.jackson.node.JsonNodeFactory;
+import org.codehaus.jackson.node.ObjectNode;
 import play.Logger;
 import play.data.Form;
 import play.db.ebean.Model;
-import play.mvc.*;
-import scala.util.parsing.json.JSONObject;
+import play.libs.Akka;
+import play.libs.F;
+import play.mvc.Controller;
+import play.mvc.Http;
+import play.mvc.Result;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Random;
+import java.util.concurrent.Callable;
 
 public class Application extends Controller {
 
@@ -35,8 +40,8 @@ public class Application extends Controller {
         response().setContentType("application/json");
         response().setHeader("h1", "value");
         response().setHeader(ETAG, "654564646");
-        if(c != null)
-            response().setCookie("c", c.value() +  "aaa");
+        if (c != null)
+            response().setCookie("c", c.value() + "aaa");
         else
             response().setCookie("c", "w/o c");
         Status ok = ok(objectNode);
@@ -53,18 +58,45 @@ public class Application extends Controller {
 /*        JsonNode jsonNode = request().body().asJson();
         int intValue = jsonNode.get("int").asInt();
         return ok("" + intValue);
-  */  }
+  */
+    }
 
     public static Result indexStream() {
         Logger.info("Streaming ...");
         try {
-            File file = new File(System.getProperty("user.dir"),"README");
+            File file = new File(System.getProperty("user.dir"), "README");
             return ok(new FileInputStream(file));
         } catch (FileNotFoundException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
         Logger.info("Streaming is done.");
         return badRequest();
+    }
+
+    public static Result async() {
+        F.Promise<Integer> future = Akka.future(
+                new Callable<Integer>() {
+                    @Override
+                    public Integer call() throws Exception {
+                        Random random = new Random();
+                        int wait = random.nextInt(5000);
+                        Thread thread = Thread.currentThread();
+                        if(thread == null)
+                            throw new IllegalThreadStateException("omg");
+                        else {
+                            thread.sleep(wait);
+                        }
+                        return wait;
+                    }
+                });
+        return async(
+                future.map(new F.Function<Integer, Result>() {
+                    @Override
+                    public Result apply(Integer integer) throws Throwable {
+                        return ok(String.format("Computation threads wait for %d ms.", integer));
+                    }
+                })
+        );
     }
 
     public static Result postIndex() {
@@ -85,10 +117,9 @@ public class Application extends Controller {
 
     public static Result addNewAddress() {
         Form<Address> filledForm = addressesForm.bindFromRequest();
-        if(filledForm.hasErrors()) {
+        if (filledForm.hasErrors()) {
             return badRequest();
-        }
-        else {
+        } else {
             Address address = filledForm.get();
 //            address.Id = finder.all().size();
             address.save();

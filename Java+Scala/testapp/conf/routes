@@ -6,6 +6,7 @@
 GET     /                           controllers.Application.index()
 POST    /                           controllers.Application.postIndex()
 GET     /s/                         controllers.Application.indexStream()
+GET     /as                         controllers.Application.async()
 
 GET     /a                          controllers.Application.addresses()
 POST    /a                          controllers.Application.addNewAddress()
