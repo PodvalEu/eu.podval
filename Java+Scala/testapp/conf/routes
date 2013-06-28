@@ -5,6 +5,7 @@
 # Home page
 GET     /                           controllers.Application.index()
 POST    /                           controllers.Application.postIndex()
+GET     /s/                         controllers.Application.indexStream()
 
 GET     /a                          controllers.Application.addresses()
 POST    /a                          controllers.Application.addNewAddress()

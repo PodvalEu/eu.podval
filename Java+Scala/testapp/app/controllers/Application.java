@@ -55,6 +55,16 @@ public class Application extends Controller {
         return ok("" + intValue);
   */  }
 
+    public static Result indexStream() {
+        try {
+            File file = new File(System.getProperty("user.dir"),"README");
+            return ok(new FileInputStream(file));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+        return badRequest();
+    }
+
     public static Result postIndex() {
         response().setContentType("application/json");
 
