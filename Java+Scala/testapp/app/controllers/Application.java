@@ -1,20 +1,21 @@
 package controllers;
 
 import models.Address;
-import org.codehaus.jackson.JsonFactory;
 import org.codehaus.jackson.JsonNode;
-import org.codehaus.jackson.node.*;
+import org.codehaus.jackson.node.ArrayNode;
+import org.codehaus.jackson.node.IntNode;
+import org.codehaus.jackson.node.JsonNodeFactory;
+import org.codehaus.jackson.node.ObjectNode;
+import play.Logger;
 import play.data.Form;
 import play.db.ebean.Model;
-import play.mvc.*;
-import scala.util.parsing.json.JSONObject;
+import play.mvc.Controller;
+import play.mvc.Http;
+import play.mvc.Result;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Application extends Controller {
 
@@ -62,6 +63,7 @@ public class Application extends Controller {
         } catch (FileNotFoundException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
+        Logger.info("Streaming is done.");
         return badRequest();
     }
 
