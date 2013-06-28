@@ -2,20 +2,19 @@ package controllers;
 
 import models.Address;
 import org.codehaus.jackson.JsonNode;
-import org.codehaus.jackson.node.ArrayNode;
-import org.codehaus.jackson.node.IntNode;
-import org.codehaus.jackson.node.JsonNodeFactory;
-import org.codehaus.jackson.node.ObjectNode;
+import org.codehaus.jackson.node.*;
 import play.Logger;
 import play.data.Form;
 import play.db.ebean.Model;
-import play.mvc.Controller;
-import play.mvc.Http;
-import play.mvc.Result;
+import play.mvc.*;
+import scala.util.parsing.json.JSONObject;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Application extends Controller {
 
@@ -57,6 +56,7 @@ public class Application extends Controller {
   */  }
 
     public static Result indexStream() {
+        Logger.info("Streaming ...");
         try {
             File file = new File(System.getProperty("user.dir"),"README");
             return ok(new FileInputStream(file));
