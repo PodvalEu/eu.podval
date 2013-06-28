@@ -1,0 +1,19 @@
+@(addresses: List[Address], taskForm: Form[Address])
+@import helper._
+@main("Todo list") {
+        <h1>Addresses</h1>
+        <ul>
+            @for(address <- addresses){
+            <li>
+                Id: @address.Id, Street: @address.street
+                @form(routes.Application.deleteAddress(address.Id)){
+                    <input type="submit" value="Delete">
+                }
+            </li>
+            }
+        </ul>
+        <h1>Add new address</h1>
+        @form(routes.Application.addNewAddress()) {
+            @inputText(taskForm("street")): <input type="submit" value="Create" />
+        }
+}
