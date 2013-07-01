@@ -10,7 +10,7 @@ GET     /ls/                        controllers.Application.indexLongStream()
 GET     /chs/                       controllers.Application.indexChunkStrings()
 GET     /ws                         controllers.Application.indexWebSocket()
 GET     /as                         controllers.Application.async()
-GET     /an                         controllers.Application.another()
+GET     /another                    controllers.Application.another()
 
 GET     /a                          controllers.Application.addresses()
 POST    /a                          controllers.Application.addNewAddress()
