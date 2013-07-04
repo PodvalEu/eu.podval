@@ -11,7 +11,7 @@ import scala.util.Random
  */
 object MainClass {
   def main(args: Array[String]) {
-    val control: Control = new Control
-    control.method();
+    val array: ArrayTopic = new ArrayTopic
+    array.method();
   }
 }
