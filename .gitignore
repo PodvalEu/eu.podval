@@ -1,4 +1,4 @@
-
+*.class
 /NHibernatePerformanceIssues/bin
 /NHibernatePerformanceIssues/_ReSharper.NHibernatePerformanceIssues
 /NHibernatePerformanceIssues/NHibernatePerformanceIssues/bin
