@@ -21,4 +21,9 @@ public class BeanImplTest {
         bean.OtherBean = mock(OtherBean.class);
         bean.Method();
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void Method2_Throws_When_OtherBean2_Is_Missing() {
+        // ...
+    }
 }

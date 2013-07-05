@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d99c754c-1444-4041-80d3-440c1afd53f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Learning/src/ArrayTopic.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/eu/podval/BeanImplTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/podval/OtherBean2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_mockito_mockito_all_1_9_5.xml" />
-      <change type="DELETED" beforePath="C:\Data\Java\Git\Java+Scala\CtorDI\src\test\java\foo\eu\SpringAppTests.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/podval/CtoBeanImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Learning/src/MapClass.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_mockito_mockito_core_1_9_5.xml" />
+      <change type="DELETED" beforePath="C:\Data\Java\Git\Java+Scala\CtorDI\.idea\libraries\org_mockito_mockito_all_1_9_5.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/podval/Bean.java" afterPath="$PROJECT_DIR$/src/main/java/eu/podval/Bean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/podval/BeanImpl.java" afterPath="$PROJECT_DIR$/src/main/java/eu/podval/BeanImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/eu/podval/BeanImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/eu/podval/BeanImplTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CtorDI.iml" afterPath="$PROJECT_DIR$/CtorDI.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Learning/src/MainClass.scala" afterPath="$PROJECT_DIR$/../Learning/src/MainClass.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -16,15 +16,16 @@
     </list>
     <ignored path="CtorDI.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d99c754c-1444-4041-80d3-440c1afd53f5" time="1372878027345" ignored="false" />
+    <file path="/Dummy.txt" changelist="d99c754c-1444-4041-80d3-440c1afd53f5" time="1373038985523" ignored="false" />
     <file path="/fragment.java" changelist="d99c754c-1444-4041-80d3-440c1afd53f5" time="1372879297633" ignored="false" />
     <file path="/a.dummy" changelist="d99c754c-1444-4041-80d3-440c1afd53f5" time="1372706722479" ignored="false" />
-    <file path="/BeanImpl.java" changelist="d99c754c-1444-4041-80d3-440c1afd53f5" time="1372878231891" ignored="false" />
+    <file path="/BeanImpl.java" changelist="d99c754c-1444-4041-80d3-440c1afd53f5" time="1373040454072" ignored="false" />
     <file path="/spring-config.xml" changelist="d99c754c-1444-4041-80d3-440c1afd53f5" time="1372706963181" ignored="false" />
     <file path="/OtherBean.java" changelist="d99c754c-1444-4041-80d3-440c1afd53f5" time="1372707113835" ignored="false" />
     <file path="/Bean.java" changelist="d99c754c-1444-4041-80d3-440c1afd53f5" time="1372707022371" ignored="false" />
     <file path="/OtherBean2.java" changelist="d99c754c-1444-4041-80d3-440c1afd53f5" time="1372878255901" ignored="false" />
     <file path="/BeanImplTest.java" changelist="d99c754c-1444-4041-80d3-440c1afd53f5" time="1372879593042" ignored="false" />
+    <file path="/CtoBeanImpl.java" changelist="d99c754c-1444-4041-80d3-440c1afd53f5" time="1373039688277" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +98,7 @@
       <file leaf-file-name="Bean.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/eu/podval/Bean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="18" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
+            <state line="5" column="46" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -106,7 +107,25 @@
       <file leaf-file-name="BeanImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/eu/podval/BeanImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="46" selection-start="378" selection-end="402" vertical-scroll-proportion="0.0">
+            <state line="16" column="59" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CtoBeanImpl.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eu/podval/CtoBeanImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="24" selection-start="186" selection-end="197" vertical-scroll-proportion="0.03986711">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BeanImplTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/eu/podval/BeanImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="1" selection-start="151" selection-end="755" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,13 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeanImplTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/eu/podval/BeanImplTest.java">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="151" selection-end="618" vertical-scroll-proportion="0.18836565">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -166,12 +183,13 @@
         <option value="$PROJECT_DIR$/src/main/java/foo/eu/HelloApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/foo/podval/Bean.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/eu/podval/Bean.java" />
         <option value="$PROJECT_DIR$/src/main/java/eu/podval/OtherBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/eu/podval/OtherBean2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eu/podval/BeanImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/eu/podval/BeanImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/podval/Bean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/podval/BeanImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/eu/podval/BeanImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/podval/CtoBeanImpl.java" />
       </list>
     </option>
   </component>
@@ -186,7 +204,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1874" />
-    <option name="height" value="1216" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -224,6 +242,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="CtorDI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -328,13 +350,13 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="Repository.Attach.Sources" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="Downloaded.Files.Path" value="C:\Data\Java\Git\Java+Scala\CtorDI\lib" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="Downloaded.Files.Path" value="C:\Data\Java\Git\Java+Scala\CtorDI\lib" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -410,19 +432,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -449,6 +458,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -531,7 +553,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1874" height="1216" extended-state="6" />
+    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -544,19 +566,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.7083333" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67094016" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29166666" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -626,6 +648,36 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/eu/podval/BeanImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="151" selection-end="618" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/podval/OtherBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="10" selection-start="71" selection-end="80" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/podval/BeanImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="46" selection-start="378" selection-end="402" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/podval/OtherBean2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="10" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -643,9 +695,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/eu/podval/BeanImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="14" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -659,13 +709,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="51" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eu/podval/Bean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="18" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -684,21 +727,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/podval/Bean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="46" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eu/podval/BeanImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="46" selection-start="378" selection-end="402" vertical-scroll-proportion="0.0">
+        <state line="16" column="59" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/eu/podval/BeanImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="1" selection-start="151" selection-end="755" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/eu/podval/BeanImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/podval/CtoBeanImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="151" selection-end="618" vertical-scroll-proportion="0.18836565">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="9" column="24" selection-start="186" selection-end="197" vertical-scroll-proportion="0.03986711">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -767,7 +829,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>org.mockito:mockito-all:1.9.5</last-edited>
+          <last-edited>org.mockito:mockito-core:1.9.5</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

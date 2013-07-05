@@ -9,4 +9,5 @@ package eu.podval;
  */
 public interface Bean {
     void Method();
+    void Method2();
 }

@@ -23,4 +23,9 @@ public class BeanImpl implements Bean {
         long value = OtherBean.computation();
         // ...
     }
+
+    @Override
+    public void Method2() {
+        // Validate beans again
+    }
 }
