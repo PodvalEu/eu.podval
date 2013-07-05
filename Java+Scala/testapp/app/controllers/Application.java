@@ -14,6 +14,7 @@ import play.libs.F;
 import play.mvc.Controller;
 import play.mvc.Http;
 import play.mvc.Result;
+import play.mvc.WebSocket;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -99,6 +100,41 @@ public class Application extends Controller {
         );
     }
 
+    public static Result indexLongStream() {
+        return ok(new File("c:\\Data\\Temp\\HPServiceVirtualizationDesigner.msi"));
+    }
+
+    public static Result indexChunkStrings() {
+        StringChunks stringChunks = new StringChunks() {
+            @Override
+            public void onReady(Out<String> stringOut) {
+                stringOut.write("first");
+                stringOut.write("second");
+                stringOut.write("third");
+                stringOut.close();
+            }
+        };
+        return ok(stringChunks);
+    }
+
+    public static WebSocket<String> indexWebSocket() {
+        return new WebSocket<String>() {
+            @Override
+            public void onReady(In<String> stringIn, Out<String> stringOut) {
+                try {
+                    stringOut.write("Hello!");
+                    Thread.currentThread().sleep(1000);
+                    stringOut.write("Hello2!");
+                    Thread.currentThread().sleep(1000);
+                    stringOut.write("Hello3!");
+                } catch (InterruptedException e) {
+                    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                }
+                stringOut.close();
+            }
+        };
+    }
+
     public static Result postIndex() {
         response().setContentType("application/json");
 
@@ -130,5 +166,9 @@ public class Application extends Controller {
     public static Result deleteAddress(Long id) {
         finder.ref(id).delete();
         return redirect(routes.Application.addresses());
+    }
+
+    public static Result another() {
+        return ok(views.html.another.render("test"));
     }
 }
