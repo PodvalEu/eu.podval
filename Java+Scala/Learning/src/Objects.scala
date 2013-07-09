@@ -1,0 +1,6 @@
+class Objects {
+
+  def method() = {
+
+  }
+}

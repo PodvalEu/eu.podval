@@ -1,6 +1,6 @@
 object MainClass {
   def main(args: Array[String]) {
-    val cls: MapClass = new MapClass
+    val cls = new Objects
     cls.method();
   }
 }
