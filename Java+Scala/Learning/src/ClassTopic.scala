@@ -219,7 +219,7 @@ class Car(val manufacturer: String, val modelName: String, val year: Int, var li
 }
 
 class Employee(val name: String, val salary: Double) {
-  def this() = this("Karel Gott", 456789, 45)
+  def this() = this("Karel Gott", 456789.45)
 }
 
 class Employee3(val name: String = "Karel Gott", val salary: Double = 456412.45) {
