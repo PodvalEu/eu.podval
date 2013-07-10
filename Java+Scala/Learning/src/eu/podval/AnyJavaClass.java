@@ -1,3 +1,5 @@
+package eu.podval;
+
 public class AnyJavaClass {
 
     public static void ProcessArray(int[] array) {

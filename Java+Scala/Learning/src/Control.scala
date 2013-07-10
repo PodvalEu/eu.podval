@@ -1,13 +1,8 @@
+package eu.podval {
+
 import java.io.FileNotFoundException
 import scala.io.Source
 
-/**
- * Created with IntelliJ IDEA.
- * User: Martin
- * Date: 7/2/13
- * Time: 3:57 PM
- * To change this template use File | Settings | File Templates.
- */
 class Control {
 
   def method() {
@@ -25,25 +20,27 @@ class Control {
     z = x = 5;
 
     var r = 10;
-    while(r > 0) {
+    while (r > 0) {
       println(r)
-      r=r-1;
+      r = r - 1;
     }
 
-    for(i <- Range.inclusive(10,1,-1)) {
+    for (i <- Range.inclusive(10, 1, -1)) {
       println("L: " + i)
     }
 
     def countdown(i: Int): Unit = {
       println("C: " + i)
-      if(i >0)
-        countdown(i-1);
+      if (i > 0)
+        countdown(i - 1);
     }
     countdown(34)
 
-    def unicodeProduct(v: String) :Long = {
+    def unicodeProduct(v: String): Long = {
       var array: Array[Char] = v.toCharArray
-      array.foldLeft(1L)((a,b) => {println("b: " + b.toInt); a * b.toInt});
+      array.foldLeft(1L)((a, b) => {
+        println("b: " + b.toInt); a * b.toInt
+      });
     }
 
     println("Product: " + unicodeProduct("hello"));
@@ -163,4 +160,6 @@ class Control {
     print(333);
     return 7
   }
+}
+
 }

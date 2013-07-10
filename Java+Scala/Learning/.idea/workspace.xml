@@ -2,26 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af98084e-9efe-42a2-96e6-f3b9a4827845" name="Default" comment="+ class topic">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ClassTopic.scala" afterPath="$PROJECT_DIR$/src/ClassTopic.scala" />
+      <change type="MOVED" beforePath="C:\Data\Repositories\GitHub-Podval.eu\Java+Scala\Learning\src\AnyJavaClass.java" afterPath="$PROJECT_DIR$/src/eu/podval/AnyJavaClass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ArrayTopic.scala" afterPath="$PROJECT_DIR$/src/ArrayTopic.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Control.scala" afterPath="$PROJECT_DIR$/src/Control.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainClass.scala" afterPath="$PROJECT_DIR$/src/MainClass.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MapClass.scala" afterPath="$PROJECT_DIR$/src/MapClass.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Objects.scala" afterPath="$PROJECT_DIR$/src/Objects.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Learning.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/MainClass.scala" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1373359438162" ignored="false" />
+    <file path="/MainClass.scala" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1373461867876" ignored="false" />
     <file path="/fragment.java" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1373359459096" ignored="false" />
     <file path="/Scala Console" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1370175432145" ignored="false" />
     <file path="/a.dummy" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1373359034944" ignored="false" />
-    <file path="/Dummy.txt" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1373354609076" ignored="false" />
+    <file path="/Dummy.txt" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1373461638504" ignored="false" />
     <file path="/Control.scala" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1372854530889" ignored="false" />
     <file path="/Array.scala" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1372863758943" ignored="false" />
-    <file path="/ArrayTopic.scala" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1372943045248" ignored="false" />
-    <file path="/AnyJavaClass.java" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1372940043085" ignored="false" />
+    <file path="/ArrayTopic.scala" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1373462022396" ignored="false" />
+    <file path="/AnyJavaClass.java" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1373461995026" ignored="false" />
     <file path="/Map.scala" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1372950788314" ignored="false" />
     <file path="/MapClass.scala" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1372949305311" ignored="false" />
     <file path="/ClassTopic.scala" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1373354427033" ignored="false" />
     <file path="/Objects.scala" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1373359921146" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="af98084e-9efe-42a2-96e6-f3b9a4827845" time="1373359919100" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,44 +85,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainClass.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainClass.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainClass.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="44" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
+            <state line="4" column="12" selection-start="63" selection-end="63" vertical-scroll-proportion="0.09353507">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Scala/src/scala-library-src.jar!/scala/App.scala">
+      <file leaf-file-name="ArrayTopic.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ArrayTopic.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="33" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.0">
+            <state line="111" column="25" selection-start="3153" selection-end="3153" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Platform.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Scala/src/scala-library-src.jar!/scala/compat/Platform.scala">
+      <file leaf-file-name="Control.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Control.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="17" selection-start="6163" selection-end="6174" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Objects.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Objects.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Objects.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="27" selection-start="912" selection-end="912" vertical-scroll-proportion="0.6781293">
-              <folding>
-                <element signature="e#1831#1995#0" expanded="false" />
-                <element signature="e#2021#2060#1" expanded="false" />
-                <element signature="e#2089#2122#1" expanded="false" />
-                <element signature="e#2167#2248#1" expanded="false" />
-                <element signature="e#2343#2466#1" expanded="false" />
-              </folding>
+            <state line="96" column="7" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapClass.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MapClass.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="6" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,14 +149,15 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/Array.scala" />
+        <option value="$PROJECT_DIR$/src/Map.scala" />
+        <option value="$PROJECT_DIR$/src/ClassTopic.scala" />
+        <option value="$PROJECT_DIR$/src/Objects.scala" />
+        <option value="$PROJECT_DIR$/src/MapClass.scala" />
         <option value="$PROJECT_DIR$/src/Control.scala" />
         <option value="$PROJECT_DIR$/src/AnyJavaClass.java" />
+        <option value="$PROJECT_DIR$/src/eu/podval/AnyJavaClass.java" />
         <option value="$PROJECT_DIR$/src/ArrayTopic.scala" />
-        <option value="$PROJECT_DIR$/src/Map.scala" />
-        <option value="$PROJECT_DIR$/src/MapClass.scala" />
-        <option value="$PROJECT_DIR$/src/ClassTopic.scala" />
         <option value="$PROJECT_DIR$/src/MainClass.scala" />
-        <option value="$PROJECT_DIR$/src/Objects.scala" />
       </list>
     </option>
   </component>
@@ -189,6 +196,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -220,10 +228,45 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Objects.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="podval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,36 +282,41 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.MainClass">
-    <configuration default="false" name="MainClass" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="MainClass" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="first second and last" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Learning" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="Scala Console" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true">
       <module name="Learning" />
       <setting name="vmparams4" value="-Djline.terminal=NONE" />
       <setting name="consoleArgs" value="-usejavacp" />
       <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MainClass" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="eu.podval.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="eu.podval.MainClass" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Learning" />
+      <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -292,6 +340,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -320,19 +381,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -372,13 +420,14 @@
       <method />
     </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.MainClass" />
-      <item index="1" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
+      <item index="0" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
+      <item index="1" class="java.lang.String" itemvalue="Application.MainClass" />
     </list>
     <recent_temporary>
-      <list size="2">
+      <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Application.MainClass" />
-        <item index="1" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MainClass" />
+        <item index="2" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -439,7 +488,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -459,6 +507,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2869318" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -529,61 +578,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files (x86)/Scala/src/scala-library-src.jar!/scala/collection/TraversableOnce.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="6" selection-start="6758" selection-end="6758" vertical-scroll-proportion="0.01864035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MapClass.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="943" selection-end="943" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Control.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="17" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArrayTopic.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AnyJavaClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="18" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Scala/src/scala-library-src.jar!/scala/collection/immutable/StringLike.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="96" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.7878315">
-          <folding>
-            <element signature="e#1409#10086#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="44" column="96" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.7878315" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ClassTopic.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="1" selection-start="4785" selection-end="4785" vertical-scroll-proportion="0.8596974">
-          <folding>
-            <element signature="e#1094#1667#1" expanded="false" />
-            <element signature="e#1734#1857#1" expanded="false" />
-            <element signature="e#2024#2341#1" expanded="false" />
-            <element signature="e#2387#2799#1" expanded="false" />
-            <element signature="e#3314#4144#1" expanded="false" />
-          </folding>
-        </state>
+        <state line="229" column="1" selection-start="4785" selection-end="4785" vertical-scroll-proportion="0.8596974" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_10/src.zip!/java/lang/String.java">
@@ -595,16 +597,12 @@
     </entry>
     <entry file="jar://C:/Program Files (x86)/Scala/src/scala-library-src.jar!/scala/Predef.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="7" selection-start="4091" selection-end="4091" vertical-scroll-proportion="0.3328467">
-          <folding />
-        </state>
+        <state line="84" column="7" selection-start="4091" selection-end="4091" vertical-scroll-proportion="0.3328467" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files (x86)/Scala/src/scala-library-src.jar!/scala/Array.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="6" selection-start="4197" selection-end="4197" vertical-scroll-proportion="0.33287483">
-          <folding />
-        </state>
+        <state line="116" column="6" selection-start="4197" selection-end="4197" vertical-scroll-proportion="0.33287483" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files (x86)/Scala/src/scala-library-src.jar!/scala/compat/Platform.scala">
@@ -623,16 +621,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_10/src.zip!/java/awt/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="11" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.33287483">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainClass.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="44" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="91" column="11" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.33287483" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files (x86)/Scala/src/scala-library-src.jar!/scala/Enumeration.scala">
@@ -642,16 +631,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_10/src.zip!/java/util/Objects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="19" selection-start="552" selection-end="552" vertical-scroll-proportion="0.19805825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MapClass.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="6" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Objects.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="27" selection-start="912" selection-end="912" vertical-scroll-proportion="0.6781293">
-          <folding>
-            <element signature="e#1831#1995#0" expanded="false" />
-            <element signature="e#2021#2060#1" expanded="false" />
-            <element signature="e#2089#2122#1" expanded="false" />
-            <element signature="e#2167#2248#1" expanded="false" />
-            <element signature="e#2343#2466#1" expanded="false" />
-          </folding>
+        <state line="96" column="7" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eu/podval/AnyJavaClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="1" selection-start="177" selection-end="177" vertical-scroll-proportion="0.2729927">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArrayTopic.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="25" selection-start="3153" selection-end="3153" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainClass.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="12" selection-start="63" selection-end="63" vertical-scroll-proportion="0.09353507">
+          <folding />
         </state>
       </provider>
     </entry>

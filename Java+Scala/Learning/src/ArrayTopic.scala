@@ -1,3 +1,5 @@
+package eu.podval {
+
 import scala.collection.mutable.ArrayBuffer
 import java.awt.datatransfer._
 
@@ -35,7 +37,7 @@ class ArrayTopic {
     println(doubleArray.distinct.mkString(" "))
 
     val america = "America/";
-    val americas = for(z <- java.util.TimeZone.getAvailableIDs if z.startsWith(america)) yield z.substring(america.length-1)
+    val americas = for (z <- java.util.TimeZone.getAvailableIDs if z.startsWith(america)) yield z.substring(america.length - 1)
     println(americas.sorted.mkString(" "));
 
     val flw = SystemFlavorMap.getDefaultFlavorMap().asInstanceOf[SystemFlavorMap]
@@ -112,4 +114,6 @@ class ArrayTopic {
     AnyJavaClass.ProcessArray(new Array[Int](5));
     var array: Array[Integer] = AnyJavaClass.GetArray()
   }
+}
+
 }

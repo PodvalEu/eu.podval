@@ -1,3 +1,5 @@
+package eu.podval {
+
 import java.util
 import java.util.Scanner
 import scala.collection.immutable.{SortedMap, HashMap}
@@ -56,4 +58,6 @@ class MapClass {
     for (k <- map1.keySet().toArray)
       println("Occurence TreeMap: " + k + " V: " + map1.get(k))
   }
+}
+
 }

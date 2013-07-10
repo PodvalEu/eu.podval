@@ -1,3 +1,5 @@
+package eu.podval {
+
 import java.awt.Point
 
 class Objects {
@@ -32,9 +34,9 @@ class Objects {
   println(Convertions.LitersToGallons(5))
   println(KilometersToMiles.Convert(5))
 
-  println(Point(1,3))
+  println(Point(1, 3))
 
-  for(c <- Cards.values) println(c)
+  for (c <- Cards.values) println(c)
 }
 
 object RGSCorners extends Enumeration {
@@ -52,8 +54,8 @@ object Cards extends Enumeration {
 
 object Point {
 
-  def apply(x: Int, y: Int) : java.awt.Point = {
-    new java.awt.Point(x,y)
+  def apply(x: Int, y: Int): java.awt.Point = {
+    new java.awt.Point(x, y)
   }
 }
 
@@ -132,4 +134,6 @@ object CarTypes extends Enumeration {
   val sedan = Value(2)
   val VAN = Value(23)
   val Combi = Value(0)
+}
+
 }

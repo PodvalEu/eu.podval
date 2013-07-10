@@ -1,3 +1,5 @@
+package eu.podval {
+
 import scala.compat.Platform
 
 object MainClass extends App {
@@ -6,4 +8,6 @@ object MainClass extends App {
   cls.method();
   printf("Finished in %d milliseconds.\n", Platform.currentTime - executionStart)
   printf("Input arguments (in reverse order): %s.", args.reverse.mkString(" "))
+}
+
 }
