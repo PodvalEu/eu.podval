@@ -1,4 +1,4 @@
-package eu.podval {
+package eu.podval
 
 import java.io.FileNotFoundException
 import scala.io.Source
@@ -160,6 +160,4 @@ class Control {
     print(333);
     return 7
   }
-}
-
 }

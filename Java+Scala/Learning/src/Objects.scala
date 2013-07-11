@@ -1,4 +1,4 @@
-package eu.podval {
+package eu.podval
 
 import java.awt.Point
 
@@ -134,6 +134,4 @@ object CarTypes extends Enumeration {
   val sedan = Value(2)
   val VAN = Value(23)
   val Combi = Value(0)
-}
-
 }

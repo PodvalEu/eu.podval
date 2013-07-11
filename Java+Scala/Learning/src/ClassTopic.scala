@@ -1,3 +1,5 @@
+package eu.podval
+
 import scala.reflect.BeanProperty
 
 class ClassTopic {

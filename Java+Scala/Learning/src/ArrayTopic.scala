@@ -1,4 +1,4 @@
-package eu.podval {
+package eu.podval
 
 import scala.collection.mutable.ArrayBuffer
 import java.awt.datatransfer._
@@ -114,6 +114,4 @@ class ArrayTopic {
     AnyJavaClass.ProcessArray(new Array[Int](5));
     var array: Array[Integer] = AnyJavaClass.GetArray()
   }
-}
-
 }
