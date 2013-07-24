@@ -14,8 +14,11 @@ class FileTopic {
     val powers: String = path + "\\resources\\powers.dat";
     val powersAnData: String = path + "\\resources\\powers-and-data.dat";
 
-    PrintAllSrcInImg("http://idnes.cz")
+    println(path)
+    println(fileCount(new File(path), "class"))
     System.exit(0)
+
+    PrintAllSrcInImg("http://idnes.cz")
     ShowNoFloats(powersAnData)
     WritePowers(powers)
     CaculateStats(random, "Unicode")
@@ -102,27 +105,36 @@ class FileTopic {
     val writer: FileWriter = new FileWriter(file)
 
     for (i <- 0 to 10) {
-      writer.write("%f\t%f\n".format(Math.pow(2,i), 1 / Math.pow(2,i)));
+      writer.write("%f\t%f\n".format(Math.pow(2, i), 1 / Math.pow(2, i)));
     }
 
     writer.flush()
     writer.close()
   }
-  
-  def ShowNoFloats(fileName:String) {
+
+  def ShowNoFloats(fileName: String) {
     val content: String = Source.fromFile(fileName, "Windows-1250").mkString
     val pattern: Regex = """(?!([+-]?([0-9]*\.?[0-9]+)))\w+""".r
-    for(value: String <- pattern.findAllIn(content)) {
+    for (value: String <- pattern.findAllIn(content)) {
       println(value)
     }
   }
 
   def PrintAllSrcInImg(url: String) {
-//    println(Source.fromURL(url, "Windows-1250").mkString)
     val regex: Regex = new Regex( """<img.*src=".*".*>""")
     val in: Iterator[Regex.Match] = regex.findAllMatchIn(Source.fromURL(url, "Windows-1250").mkString)
-    for(m <- in) {
+    for (m <- in) {
       println(m)
+    }
+  }
+
+  def fileCount(file: File, extension: String): Int = {
+    if (file.isDirectory) {
+      file.list().foldLeft(0)((s, item) => s + fileCount(new File(file, item), extension))
+    }
+    else {
+      if (file.getName.dropWhile(_ != '.').equals(".class")) 1
+      else 0
     }
   }
 }
