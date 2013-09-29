@@ -1,23 +1,38 @@
 @(categories: List[eu.podval.psi.model.Category], categoryForm: Form[String])
 @import helper._
 
+<html>
+<head>
+    <title>Vyhodnocení soutěže psů</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    <script src="@routes.Assets.at("javascripts/table.js")" type="text/javascript"></script>
+</head>
+<body>
+
 <h1>Kategorie</h1>
 
-<h2>Vyberte kategorii</h2>
-<ul>
+        <h2>Vyberte kategorii</h2>
+
+@if(!categories.isEmpty) {
+<table class="altrowstable" id="alternatecolor">
+    <tr><th>Jméno</th><th>Akce</th></tr>
     @for(c <- categories) {
-    <li>
-        <a href="">@c.name</a>
-        @form(routes.Application.deleteCategory(c.id)) {
-            <input type="submit" value="Smazat"/>
-        }
-    </li>
+        <tr>
+                <td><a href="">@c.name</a></td>
+                <td>@form(routes.Application.deleteCategory(c.id)) { <input type="submit" value="Smazat"/>}</td>
+        </tr>
     }
-</ul>
+</table>
+} else {
+Žádná kategorie neexistuje, přidejte novou.
+}
 
 <h2>Přidejte kategorii</h2>
 
 @form(routes.Application.newCategory()) {
-    @inputText(categoryForm("name"))
-    <input type="submit" value="Přidat"/>
+    @inputText(categoryForm("name")) <input type="submit" value="Přidat"/>
 }
+
+</body>
+</html>

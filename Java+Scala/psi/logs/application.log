@@ -1,6 +1,143 @@
-2013-09-28 17:14:37,398 - [INFO] - from play in main 
+2013-09-29 09:48:38,559 - [INFO] - from play in main 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2013-09-28 17:15:10,114 - [INFO] - from play in New I/O worker #2 
+2013-09-29 09:48:52,070 - [INFO] - from play in New I/O worker #1 
+Application started (Dev)
+
+2013-09-29 09:52:43,939 - [INFO] - from play in New I/O worker #1 
+Application started (Dev)
+
+2013-09-29 09:53:03,796 - [INFO] - from play in New I/O worker #1 
+Application started (Dev)
+
+2013-09-29 09:53:06,965 - [ERROR] - from play in play-internal-execution-context-4 
+Cannot invoke the action, eventually got an error: java.lang.UnsupportedOperationException: empty.max
+
+2013-09-29 09:53:06,983 - [ERROR] - from application in play-internal-execution-context-4 
+
+
+! @6fmh7i1kl - Internal server error, for (POST) [/category] ->
+
+play.api.Application$$anon$1: Execution exception[[UnsupportedOperationException: empty.max]]
+	at play.api.Application$class.handleError(Application.scala:289) ~[play_2.10.jar:2.1.1]
+	at play.api.DefaultApplication.handleError(Application.scala:383) ~[play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$handleAction$1$4$$anonfun$apply$28.apply(PlayDefaultUpstreamHandler.scala:403) ~[play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$handleAction$1$4$$anonfun$apply$28.apply(PlayDefaultUpstreamHandler.scala:403) ~[play_2.10.jar:2.1.1]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$handleAction$1$4.apply(PlayDefaultUpstreamHandler.scala:403) ~[play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$handleAction$1$4.apply(PlayDefaultUpstreamHandler.scala:398) ~[play_2.10.jar:2.1.1]
+	at play.api.libs.concurrent.PlayPromise$$anonfun$extend1$1.apply(Promise.scala:113) ~[play_2.10.jar:2.1.1]
+	at play.api.libs.concurrent.PlayPromise$$anonfun$extend1$1.apply(Promise.scala:113) ~[play_2.10.jar:2.1.1]
+	at play.api.libs.concurrent.PlayPromise$$anonfun$extend$1$$anonfun$apply$1.apply(Promise.scala:104) ~[play_2.10.jar:2.1.1]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.7.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.7.0_25]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.7.0_25]
+java.lang.UnsupportedOperationException: empty.max
+	at scala.collection.TraversableOnce$class.max(TraversableOnce.scala:202) ~[scala-library.jar:na]
+	at scala.collection.AbstractTraversable.max(Traversable.scala:105) ~[scala-library.jar:na]
+	at controllers.Application$$anonfun$newCategory$1$$anonfun$apply$2.apply(Application.scala:30) ~[na:na]
+	at controllers.Application$$anonfun$newCategory$1$$anonfun$apply$2.apply(Application.scala:28) ~[na:na]
+	at play.api.data.Form$$anonfun$fold$1.apply(Form.scala:134) ~[play_2.10.jar:2.1.1]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.api.data.Form.fold(Form.scala:134) ~[play_2.10.jar:2.1.1]
+	at controllers.Application$$anonfun$newCategory$1.apply(Application.scala:27) ~[na:na]
+	at controllers.Application$$anonfun$newCategory$1.apply(Application.scala:26) ~[na:na]
+	at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:217) ~[play_2.10.jar:2.1.1]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:109) ~[play_2.10.jar:2.1.1]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:109) ~[play_2.10.jar:2.1.1]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10.jar:2.1.1]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:108) ~[play_2.10.jar:2.1.1]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:106) ~[play_2.10.jar:2.1.1]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$2.apply(Action.scala:106) ~[play_2.10.jar:2.1.1]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$2.apply(Action.scala:99) ~[play_2.10.jar:2.1.1]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:137) ~[akka-actor_2.10.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1417) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:262) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:975) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1478) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[scala-library.jar:na]
+
+2013-09-29 10:15:22,007 - [INFO] - from play in New I/O worker #6 
+Application started (Dev)
+
+2013-09-29 10:22:37,561 - [INFO] - from play in New I/O worker #8 
+Application started (Dev)
+
+2013-09-29 10:26:58,773 - [INFO] - from play in New I/O worker #1 
+Application started (Dev)
+
+2013-09-29 10:27:49,653 - [INFO] - from play in New I/O worker #8 
+Application started (Dev)
+
+2013-09-29 10:31:59,316 - [INFO] - from play in New I/O worker #1 
+Application started (Dev)
+
+2013-09-29 10:34:19,416 - [INFO] - from play in New I/O worker #1 
+Application started (Dev)
+
+2013-09-29 10:38:33,190 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6fmhdh4h1 - Internal server error, for (POST) [/category] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error[value verifing is not a member of (String, play.api.data.Mapping[String])
+possible cause: maybe a semicolon is missing before `value verifing'?]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15$$anonfun$apply$16.apply(PlayReloader.scala:349) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15$$anonfun$apply$16.apply(PlayReloader.scala:349) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15.apply(PlayReloader.scala:349) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15.apply(PlayReloader.scala:346) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2.apply(PlayReloader.scala:346) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2.apply(PlayReloader.scala:344) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:374) ~[na:na]
+	at sbt.PlayReloader$$anon$2.reload(PlayReloader.scala:344) ~[na:na]
+	at play.core.ReloadableApplication.get(ApplicationProvider.scala:98) ~[play_2.10.jar:2.1.1]
+	at play.core.server.Server$class.sendHandler$1(Server.scala:56) ~[play_2.10.jar:2.1.1]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:88) ~[play_2.10.jar:2.1.1]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:87) ~[play_2.10.jar:2.1.1]
+	at scala.util.Either$RightProjection.flatMap(Either.scala:523) ~[scala-library.jar:na]
+	at play.core.server.Server$class.getHandlerFor(Server.scala:87) ~[play_2.10.jar:2.1.1]
+	at play.core.server.NettyServer.getHandlerFor(NettyServer.scala:34) ~[play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$6.apply(PlayDefaultUpstreamHandler.scala:115) ~[play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$6.apply(PlayDefaultUpstreamHandler.scala:115) ~[play_2.10.jar:2.1.1]
+	at scala.util.Either.fold(Either.scala:98) ~[scala-library.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler.messageReceived(PlayDefaultUpstreamHandler.scala:109) ~[play_2.10.jar:2.1.1]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) ~[netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) ~[netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) ~[netty.jar:na]
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108) ~[netty.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) ~[netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) ~[netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) ~[netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296) ~[netty.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459) ~[netty.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536) ~[netty.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435) ~[netty.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) ~[netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) ~[netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:555) ~[netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268) ~[netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255) ~[netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88) ~[netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:107) ~[netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312) ~[netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:88) ~[netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) ~[netty.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) ~[netty.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) ~[netty.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.7.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.7.0_25]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.7.0_25]
+
+2013-09-29 10:40:30,628 - [INFO] - from play in New I/O worker #1 
+Application started (Dev)
+
+2013-09-29 10:46:34,289 - [INFO] - from play in New I/O worker #8 
 Application started (Dev)
 

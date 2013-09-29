@@ -6,12 +6,14 @@ import play.api.data.Forms._
 import eu.podval.psi.model.Category
 import views._
 import scala.collection.mutable
+import play.api.i18n.Messages
 
 object Application extends Controller {
   val categories = new mutable.HashMap[Int, Category]()
+  var categoryCounter: Int = 0;
 
   val categoryForm = Form(
-    ("name" -> nonEmptyText)
+    ("name" -> text.verifying(Messages("category.create.nameMustBeFilled"), t => t != null && !t.isEmpty))
   )
 
   def index = Action {
@@ -27,7 +29,8 @@ object Application extends Controller {
       categoryForm.bindFromRequest.fold(
       formWithErrors => BadRequest(html.index(categories.values.toList, formWithErrors)), {
         case (name) => {
-          categories.put(categories.keySet.max, new Category(categories.size, name))
+          categoryCounter += 1
+          categories.put(categoryCounter, new Category(categories.size, name))
           Ok(html.index(categories.values.toList, categoryForm))
         }
       }

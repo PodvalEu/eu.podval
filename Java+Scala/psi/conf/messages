@@ -1,8 +1,8 @@
-category.create.nameMustBeFilled=Jméno kategorie nem??e byt prázdné.
-category.create.idHigher0=Jméno kategorie nem??e byt prázdné.
-item.create.numberHigher0=Polo?ka {0} musí mít ?íslo v?t?í ne? 0.
-item.create.nameNotNullOrEmpty=Jméno polo?ky nesmí bıt prázdné.
-item.create.zkoHigher0=Zko {0} musí mít ?íslo v?t?í ne? 0.
-item.create.trackHigher0=Stopa {0} musí mít ?íslo v?t?í ne? 0.
-item.create.docilityHigher0=Poslu?nost {0} musí mít ?íslo v?t?í ne? 0.
-item.create.defenseHigher0=Obrana {0} musí mít ?íslo v?t?í ne? 0.
+category.create.nameMustBeFilled=JmÃ©no kategorie nemÅ¯Å¾e byt prÃ¡zdnÃ©.
+category.create.idHigher0=ID kategorie nemÅ¯Å¾e byt prÃ¡zdnÃ©.
+item.create.numberHigher0=PoloÅ¾ka {0} musÃ­ mÃ­t ÄÃ­slo vÄ›tÅ¡Ã­ neÅ¾ 0.
+item.create.nameNotNullOrEmpty=JmÃ©no poloÅ¾ky nesmÃ­ bÃ½t prÃ¡zdnÃ©.
+item.create.zkoHigher0=Zko {0} musÃ­ mÃ­t ÄÃ­slo vÄ›tÅ¡Ã­ neÅ¾ 0.
+item.create.trackHigher0=Stopa {0} musÃ­ mÃ­t ÄÃ­slo vÄ›tÅ¡Ã­ neÅ¾ 0.
+item.create.docilityHigher0=PosluÅ¡nost {0} musÃ­ mÃ­t ÄÃ­slo vÄ›tÅ¡Ã­ neÅ¾ 0.
+item.create.defenseHigher0=Obrana {0} musÃ­ mÃ­t ÄÃ­slo vÄ›tÅ¡Ã­ neÅ¾ 0.
