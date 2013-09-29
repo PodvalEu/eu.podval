@@ -1,0 +1,62 @@
+@(category: eu.podval.psi.model.Category, itemForm: Form[(Int, String, Int, Int, Int, Int)])
+
+@import helper._
+@import helper.twitterBootstrap._
+
+@main(title = category.name, Some(category)) {
+    <fieldset>
+        <legend>Pořadí kategorie</legend>
+
+        @if(category.getAllItems.size > 0) {
+        <table class="altrowstable" id="alternatecolor">
+            <tr>
+                <th>@Messages("item.number")</th>
+                <th>@Messages("item.name")</th>
+                <th>@Messages("item.zko")</th>
+                <th>@Messages("item.track")</th>
+                <th>@Messages("item.docility")</th>
+                <th>@Messages("item.defense")</th>
+            </tr>
+
+            @for(i <- category.getAllItems) {
+            <tr>
+                <td>@i.number</td>
+                <td>@i.name</td>
+                <td>@i.zko</td>
+                <td>@i.track</td>
+                <td>@i.docility</td>
+                <td>@i.defense</td>
+                <td>@i.overallScore</td>
+                <td>--</td>
+            </tr>
+            }
+        </table>
+        } else {
+        Žádná položka neexistuje, přidejte novou.
+        }
+    </fieldset>
+
+    @if(itemForm.hasErrors) {
+        <div class="alert-message error">
+            <p>Ve formuláři je chyba.</p>
+        </div>
+    }
+
+    @helper.form(action = routes.Application.newCategoryItem(category.id)) {
+        <fieldset>
+            <legend>Přidání nové položky</legend>
+            <div class="twipsies well profile">
+                    @inputText(itemForm("number"), '_label -> Messages("item.number"), '_help -> "")
+                    @inputText(itemForm("name"), '_label -> Messages("item.name"))
+                    @inputText(itemForm("zko"), '_label -> Messages("item.zko"), '_help -> "")
+                    @inputText(itemForm("track"), '_label -> Messages("item.track"), '_help -> "")
+                    @inputText(itemForm("docility"), '_label -> Messages("item.docility"), '_help -> "")
+                    @inputText(itemForm("defense"), '_label -> Messages("item.defense"), '_help -> "")
+
+                    <div class="manage">
+                        <input type="submit" class="addProfile btn success" value="Přidat">
+                    </div>
+                </div>
+        </fieldset>
+    }
+}

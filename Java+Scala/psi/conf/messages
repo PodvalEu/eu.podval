@@ -1,8 +1,11 @@
 category.create.nameMustBeFilled=Jméno kategorie nemůže byt prázdné.
 category.create.idHigher0=ID kategorie nemůže byt prázdné.
-item.create.numberHigher0=Položka {0} musí mít číslo větší než 0.
 item.create.nameNotNullOrEmpty=Jméno položky nesmí být prázdné.
-item.create.zkoHigher0=Zko {0} musí mít číslo větší než 0.
-item.create.trackHigher0=Stopa {0} musí mít číslo větší než 0.
-item.create.docilityHigher0=Poslušnost {0} musí mít číslo větší než 0.
-item.create.defenseHigher0=Obrana {0} musí mít číslo větší než 0.
+item.number=Startovací číslo
+item.name=Jméno psovoda a psa
+item.zko=ZKO
+item.track=Stopa
+item.docility=Poslušnost
+item.defense=Obrana
+error.min=Číslo musí být větší nebo rovno {0}.
+error.number=Hodnota musí být číslo.

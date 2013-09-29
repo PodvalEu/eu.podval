@@ -1,38 +1,39 @@
 @(categories: List[eu.podval.psi.model.Category], categoryForm: Form[String])
+
 @import helper._
+@import helper.twitterBootstrap._
 
-<html>
-<head>
-    <title>Vyhodnocení soutěže psů</title>
-    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
-    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
-    <script src="@routes.Assets.at("javascripts/table.js")" type="text/javascript"></script>
-</head>
-<body>
+@main(title = "Kategorie", None) {
 
-<h1>Kategorie</h1>
-
-        <h2>Vyberte kategorii</h2>
-
-@if(!categories.isEmpty) {
-<table class="altrowstable" id="alternatecolor">
-    <tr><th>Jméno</th><th>Akce</th></tr>
-    @for(c <- categories) {
-        <tr>
-                <td><a href="">@c.name</a></td>
-                <td>@form(routes.Application.deleteCategory(c.id)) { <input type="submit" value="Smazat"/>}</td>
-        </tr>
+    @if(categoryForm.hasErrors) {
+    <div class="alert-message error">
+        <p>Ve formuláři je chyba.</p>
+    </div>
     }
-</table>
-} else {
-Žádná kategorie neexistuje, přidejte novou.
+
+    <fieldset>
+        @if(!categories.isEmpty) {
+        <table class="altrowstable" id="alternatecolor">
+            <tr><th>Jméno</th><th>Akce</th></tr>
+            @for(c <- categories) {
+                <tr>
+                        <td><a href="@routes.Application.category(c.id)">@c.name</a></td>
+                        <td>@form(routes.Application.deleteCategory(c.id)) { <input type="submit" value="Smazat"/>}</td>
+                </tr>
+            }
+        </table>
+        } else {
+            Žádná kategorie neexistuje, přidejte novou.
+        }
+    </fieldset>
+
+    @helper.form(action = routes.Application.newCategory) {
+        <fieldset>
+            <legend>Nová kategorie</legend>
+            @inputText(categoryForm("name"), '_label -> "Jméno")
+        </fieldset>
+        <div class="actions">
+            <input type="submit" class="btn primary" value="Přidat">
+        </div>
+    }
 }
-
-<h2>Přidejte kategorii</h2>
-
-@form(routes.Application.newCategory()) {
-    @inputText(categoryForm("name")) <input type="submit" value="Přidat"/>
-}
-
-</body>
-</html>

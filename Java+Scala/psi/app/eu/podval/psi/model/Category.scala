@@ -6,7 +6,7 @@ import scala.collection.mutable
 import org.slf4j.{LoggerFactory, Logger}
 
 class Category(val id: Int, val name: String) extends NotNull {
-  val logger: Logger = LoggerFactory.getLogger("chapters.introduction.HelloWorld1");
+  val logger: Logger = LoggerFactory.getLogger("Category");
   Validate.isTrue(id >= 0, Messages("category.create.idHigher0"))
   Validate.isTrue(name != null && !name.isEmpty, Messages("category.create.nameMustBeFilled"))
   val items = new mutable.HashMap[Int, Item]()
