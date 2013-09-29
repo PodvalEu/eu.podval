@@ -7,5 +7,7 @@ item.zko=ZKO
 item.track=Stopa
 item.docility=Poslušnost
 item.defense=Obrana
+item.overallScore=Celkem bodů
+item.ranking=Pořadí
 error.min=Číslo musí být větší nebo rovno {0}.
 error.number=Hodnota musí být číslo.
