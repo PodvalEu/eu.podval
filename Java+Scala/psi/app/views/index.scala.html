@@ -1,7 +1,23 @@
-@(message: String)
+@(categories: List[eu.podval.psi.model.Category], categoryForm: Form[String])
+@import helper._
 
-@main("Welcome to Play 2.1") {
-    
-    @play20.welcome(message)
-    
+<h1>Kategorie</h1>
+
+<h2>Vyberte kategorii</h2>
+<ul>
+    @for(c <- categories) {
+    <li>
+        <a href="">@c.name</a>
+        @form(routes.Application.deleteCategory(c.id)) {
+            <input type="submit" value="Smazat"/>
+        }
+    </li>
+    }
+</ul>
+
+<h2>Přidejte kategorii</h2>
+
+@form(routes.Application.newCategory()) {
+    @inputText(categoryForm("name"))
+    <input type="submit" value="Přidat"/>
 }

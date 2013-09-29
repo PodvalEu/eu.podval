@@ -6,6 +6,7 @@ syntax: glob
 *.bak
 #*.off
 *.old
+*.log
 
 # eclipse conf file
 .settings
@@ -30,6 +31,7 @@ dist
 test-output
 out
 log
+logs
 build.log
 
 # other scm
