@@ -16,8 +16,14 @@ class Category(val id: Int, val name: String) extends NotNull {
     items.put(item.number, item)
   }
 
-  def removeItem(id: Int) = {
-    if (logger.isDebugEnabled) logger.debug("Removing item [Id=%d] from category [Name=[%s].".format(id, name))
+  def removeItem(iId: Int) = {
+    if (logger.isDebugEnabled) logger.debug("Removing item [Id=%d] from category [ID=%d].".format(iId, id))
+    if (items.contains(iId)) {
+      items.remove(iId)
+    }
+    else {
+      throw new IllegalArgumentException("Can't remove item [Id=%d] from category [Id=%d], it does not exist.".format(id, this.id))
+    }
   }
 
   def getAllItems() = items.values

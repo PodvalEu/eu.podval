@@ -15,6 +15,9 @@ object Application extends Controller {
   val categories = new mutable.HashMap[Int, Category]()
   categories.put(1, new Category(1, "aaa"))
   categories.put(2, new Category(2, "bbb"))
+  categories.get(2).get.addItem(new Item(2, "aaa", 1, 3, 4, 1))
+  categories.get(2).get.addItem(new Item(1, "bbb", 7, 3, 4, 1))
+  categories.get(2).get.addItem(new Item(3, "ccc", 1, 1, 4, 1))
   var categoryCounter: Int = 0;
 
   val categoryForm = Form(
@@ -89,6 +92,18 @@ object Application extends Controller {
   }
 
   def deleteCategoryItem(cId: Int, iId: Int) = Action {
-    Ok(html.category.render(categories.get(cId).get, itemForm))
+    logger.error("Removing item [Id=%d] for category [Id=%d].".format(iId, cId))
+    if (categories.get(cId).nonEmpty) {
+      val category: Category = categories.get(cId).get
+
+      val itemOption: Option[Boolean] = category.getAllItems().map(c => c.number == iId).headOption
+      if(itemOption.nonEmpty) {
+        category.removeItem(iId)
+        Ok(html.category.render(category, itemForm))
+      }
+      else NotFound
+    }
+    else
+      NotFound
   }
 }

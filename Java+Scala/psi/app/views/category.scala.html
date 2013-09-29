@@ -18,9 +18,10 @@
                 <th>@Messages("item.defense")</th>
                 <th>@Messages("item.overallScore")</th>
                 <th>@Messages("item.ranking")</th>
+                <th>@Messages("action")</th>
             </tr>
 
-            @for(i <- category.getAllItems) {
+            @for(i <- category.getAllItems.toList.sortBy(- _.overallScore)) {
             <tr>
                 <td>@i.number</td>
                 <td>@i.name</td>
@@ -30,6 +31,7 @@
                 <td>@i.defense</td>
                 <td>@i.overallScore</td>
                 <td>--</td>
+                <td>@form(routes.Application.deleteCategoryItem(category.id, i.number)) { <input type="submit" class="btn danger pull-right" value="Smazat"/>}</td>
             </tr>
             }
         </table>
